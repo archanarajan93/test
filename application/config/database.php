@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '123.63.104.234',
-	'username' => 'pmdusr',
-	'password' => '!dtKauM19y3$#7m',
-	'database' => 'pmd2019',
+	'hostname' => '127.0.0.1',
+	'username' => 'root',
+	'password' => 'kaumudi@123',
+	'database' => 'employees',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -87,27 +87,6 @@ $db['default'] = array(
 	'cachedir' => '',
 	'char_set' => 'utf8mb4',
 	'dbcollat' => 'utf8mb4_unicode_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => (ENVIRONMENT !== 'production') 
-);
-$db['hr_db'] = array(
-	'dsn'	=> '',
-    'hostname' => '124.124.113.122',  //::::04 SERVER::::
-	'username' => 'presssoft',
-	'password' => 'colourpurple',
-	'database' => 'hr0910',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_unicode_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
 	'compress' => FALSE,

@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-date_default_timezone_set('UTC');
+date_default_timezone_set('Asia/Kolkata');
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -28,11 +28,6 @@ $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVE
 $root = $protocol.$_SERVER['HTTP_HOST'];
 $root = str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 $config['base_url'] = "$root";
-$config['upload_path'] = "/uploads/";
-$config['upload_full_path'] = $protocol.$_SERVER['HTTP_HOST'].$root."uploads/";
-$config['base_path'] = $protocol."newstrack.live/";
-$config['local_ip'] = "43.242.212.193";
-$config['version'] = '3.0'; //prev 1.9
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -221,7 +216,7 @@ $config['directory_trigger'] = 'd';
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 4;
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------
@@ -376,9 +371,9 @@ $config['encryption_key'] = 'KEY BROKEN';
 |
 */
 $config['sess_driver'] = 'database';
-$config['sess_cookie_name'] = 'CIRSTAYLOGIN';
+$config['sess_cookie_name'] = 'EMPLOYEES';
 $config['sess_expiration'] = 0;
-$config['sess_save_path'] = 'pmd_sessionsmaster';
+$config['sess_save_path'] = 'empl_sessionsmaster';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 86400;
 $config['sess_regenerate_destroy'] = TRUE;
